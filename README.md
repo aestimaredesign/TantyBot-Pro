@@ -1,12 +1,13 @@
 # TantyBot-Pro
 
-A casual yet smart construction cost estimating chatbot, built as a static web app for now. TantyBot helps with cost estimates, price inquiries, and project planning with a friendly vibe.
+A smart construction cost estimating chatbot with a static web interface, designed for natural conversation and reliable estimates.
 
 ## Features
-- Chat interface for natural conversation
-- Cost estimates with material, labor, indirect costs, and contingencies
-- Price lookups for common construction items
-- Enter key support for sending messages
+- Chat interface with Enter key support
+- Cost estimates using a mock data model (items, assemblies, rates, crews, markups)
+- RAG-like retrieval for similar items and assemblies
+- Price inquiries via Cost DB (no hallucination)
+- Casual yet dependable tone
 
 ## Usage
 - Visit the live site after deployment.
@@ -18,6 +19,7 @@ A casual yet smart construction cost estimating chatbot, built as a static web a
 - Access at https://<your-username>.github.io/TantyBot-Pro/.
 
 ## Future Plans
-- Add Next.js for a dynamic UI.
-- Integrate FastAPI for an Estimator Agent with tools (Document Parser, Cost DB, etc.).
-- Include a data layer with Vector DB and SQL DB.
+- Migrate to Next.js + Tailwind for dynamic UI.
+- Add FastAPI backend with Estimator Agent (Document Parser, Quantity Extractor, etc.).
+- Integrate Postgres, DuckDB, Redis, and Milvus for data layers.
+- Implement learning loop with CSV ingestion and model training.
